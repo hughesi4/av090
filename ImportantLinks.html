@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>TRB AV090</title>
+		<link rel = "stylesheet" href = "https://fonts.google.com/specimen/Archivo+Black?query=archivo">
+		<link rel = "stylesheet" href = "https://fonts.google.com/specimen/Judson?query=judson">
+		<style type = "text/css">
+			h1	{font-family: "Archivo Black", san serif;
+					font-size: 36pt;
+					color: black;
+					text-align: center;
+					border-bottom: 20px solid #4BA3A5;
+					margin-top: 15px;}
+			h2	{font-family: "Archivo Black", sans serif;
+					font-size: 24pt;
+					color: #2D5174;
+					text-align: center;}
+			p	{font-family: "Judson", sans serif;
+					font-size: 14pt;
+					color: black;
+					margin-left: 5%;
+					margin-right: 5%;}
+			
+			body		{margin: 0;}
+			
+			.footnote	{font-style: italic;
+						font-size: 12pt;}
+
+			/*FORMATTING FOR TEXTBOXES*/
+			.textbox	{background-color: #8ba0b3;
+						padding: 5px;}
+
+			/*WHERE THE BODY OF THE PAGE WILL GO. LEFT MARGIN MAKES SURE NO CONTENT IS UNDERNEATH THE SIDE MENU*/
+			.main		{margin-left: 30%;
+						margin-right: 2%;
+						text-align:center;}
+
+			/*MENU*/
+			nav		{width: 20%;
+					background-color: #4BA3A5;
+					font-family: Archivo Black;
+					border-left: 20px solid #4BA3A5;
+					border-right: 20px solid #4BA3A5;
+					border-bottom: 20px solid #4ba3a5;
+					font-size: 20px;
+					font-variant: small-caps;
+					height: 100%; /* MENU WILL TAKE UP THE FULL HEIGHT OF THE PAGE*/
+					position: fixed;} /* MAKES MENU "STICK", EVEN WHEN SCROLLING */
+
+			/*MENU*/
+			nav ul 	{list-style-type: none; /*GETS RID OF BULLET POINTS*/
+					margin: 0;	/*FORCES MENU INTO TOP LEFT OF WINDOW*/
+					padding: 0;} /*FORCES MENU INTO TOP LEFT OF WINDOW*/
+
+			/*MENU OPTIONS*/
+			nav li 	{display:block;
+					text-align: center;
+					padding: 20px;} /*SPACES OUT THE MENU OPTIONS TO MAKE IT LOOK NICE*/
+
+			/*ADDS YELLOW LINE TO ALL BUT LAST OPTION*/
+			nav li:not(:last-child) 	{border-bottom: 3px solid #E4FDB7;}
+
+
+			/*CLASS FOR MENU OPTION THAT HAS A SUBMENU*/
+			.dropdown	{position: relative;
+						display:block;}
+
+			/*ACTUAL SUBMENU*/
+			.dropdown-content	{display:none;
+								left:75%;
+								position: absolute;
+								background-color: #4BA3A5;}
+
+			/*SUBMENU LINKS*/
+			.dropdown-content a 	{display:inline-block;}
+
+			/*WHEN HOVERING OVER A MENU OPTION THAT HAS A SUBMENU*/
+			.dropdown:hover .dropdown-content	{display: block;}
+
+			/*WHEN HOVERING OVER MENU OPTION*/
+			nav li:hover	{background-color:#8BA0B3;}
+
+
+			/*MAKES LINKS LOOK LIKE NORMAL TEXT INSTEAD OF BLUE AND UNDERLINED*/
+			nav a	{text-decoration: none;
+					color: black;
+					display: block;}
+
+			/*USE TO SHOW USER WHICH PAGE THEY ARE CURRENTLY ON BY CHANGING COLOR OF MENU OPTION*/
+			li.active {background-color: #2D5174;
+						color: white;}
+			.AP{
+				margin-left:auto;
+				margin-right:auto;
+				margin-bottom:-20px;
+				display:box;
+				height:50%;
+				width:50%;
+			}
+			.AP{}
+			figcaption
+			{
+				font-style:italic;
+				margin:15px;
+			}
+			#ImportantLinks ul
+			{
+				list-style:none;
+				margin-right: auto;
+			}
+			.main a
+			{
+				color:#2D5174;
+				text-decoration:underline;
+			}
+			#ImportantLinks ul
+			{
+				margin-left:15%;
+			}
+			#ImportantLinks li
+			{
+				margin-right:23%;
+				padding: 9px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--SIDEBAR MENU-->
+		<nav>
+			<ul>
+				<li><a href = "home.html"><img src = "https://media.discordapp.net/attachments/816735678476976128/834244098613182464/placeholderlogo.png" width= "100px"></a></li>
+				<li><a href = "aboutus.html">About Us</a></li>
+				<li><div class = "dropdown"><a href = "#events">Events +</a>
+					<ul><div class = "dropdown-content">
+						<li><a href = "eventsarchive.html">Archive</a></li>
+						<li><a href = "eventsupcoming.html">Upcoming</a></li>
+					</div></ul>
+				</div></li>
+				<li><a href = "members.html">Members</a></li>
+				<li class = "active"><a href = "importantlinks.html">Important Links</a></li>
+				<li><a href = "joinus.html">Join Us</a></li>
+			</ul>
+		</nav>
+		
+		<!--PAGE BODY CONTENT MUST GO WITHIN DIV MAIN-->
+
+		<div class = "main">
+	   
+			<h1>Important Links</h1>
+			<h2>Announcements</h2>
+            <section id="Announcements">
+                <p>Title: John Doe Hosting Webinar</p>
+				<figure>
+					<img class="AP"src="https://cdn.pixabay.com/photo/2019/10/22/13/43/man-4568761_960_720.jpg"
+					alt="Photo of something related to event">
+					<figcaption>Img Description: John Doe</figcaption>
+				</figure>
+				<time>Time: 11-11-20XX @XX:XXam/pm</time>
+				<p>John Doe is hosting webinar about the new policies.<br>link to webinar/site:<a href="https://google.com">https://random_url.com</a></p>
+            </section>
+            <section id="ImportantLinks">
+                <h2>Important links</h2>
+				<ul>
+					<li>Previous Event #1:<a href="https://google.com">Important link 1</a></li>
+					<li>Previous Event #2:<a href="https://google.com">Important link 2</a></li>
+					<li>Previous Event #3:<a href="https://google.com">Important link 3</a></li>
+					<li>Previous Event #4:<a href="https://google.com">Important link 4</a></li>
+					<li>Previous Event #5:<a href="https://google.com">Important link 5</a></li>
+					<li>Previous Event #6:<a href="https://google.com">Important link 6</a></li>
+				</ul>
+            </section>
+			<section id="Media info">
+				<h2>Media Information</h2>
+				<p>Come in contact with us at out linkedln group</p>
+				<img src="https://image.flaticon.com/icons/png/512/174/174857.png"
+					alt="Linkedin logo" height=10% width=10%>
+				<a href="https://google.com">linkedln link</a>
+			</section>
+			<footer>
+				<p class = "footnote">Disclaimer: Any opinions, findings, or conclusions expressed on this website are those of the authors and do not necessarily reflect the views of the Transportation Research Board or The National Academies.</p>
+  
+		</div>
+
+	</body>
+</html>

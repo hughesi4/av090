@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>TRB AV090</title>
+		<link rel = "stylesheet" href = "https://fonts.google.com/specimen/Archivo+Black?query=archivo">
+		<link rel = "stylesheet" href = "https://fonts.google.com/specimen/Judson?query=judson">
+		<style type = "text/css">
+			h1			{font-family: "Archivo Black", san serif;
+						font-size: 36pt;
+						color: black;
+						text-align: center;
+						border-bottom: 20px solid #4BA3A5;
+						margin-top: 15px;}
+						
+			h2			{font-family: "Archivo Black", sans serif;
+						font-size: 24pt;
+						color: #2D5174;
+						text-align: center;}
+						
+			body		{margin: 0;}
+			p			{font-family: "Judson", sans serif;
+						font-size: 14pt;
+						color: black;}
+						
+			.footnote	{font-style: italic;
+						font-size: 12pt;
+						margin-left: 25%;
+						margin-right:5%;}
+
+			/*FORMATTING FOR TEXTBOXES*/
+			.textbox	{background-color: #8ba0b3;
+						padding: 5px;}
+
+			/*WHERE THE BODY OF THE PAGE WILL GO. LEFT MARGIN MAKES SURE NO CONTENT IS UNDERNEATH THE SIDE MENU*/
+			.main		{margin-left: 30%;
+						margin-right: 2%;
+						text-align:center;}
+
+			/*MENU*/
+			nav			{width:20%;
+						background-color: #4BA3A5;
+						font-family: Archivo Black;
+						border-left: 20px solid #4BA3A5;
+						border-right: 20px solid #4BA3A5;
+						border-bottom: 20px solid #4ba3a5;
+						font-size: 20px;
+						font-variant: small-caps;
+						height: 100%; /* MENU WILL TAKE UP THE FULL HEIGHT OF THE PAGE*/
+						position: fixed;} /* MAKES MENU "STICK", EVEN WHEN SCROLLING */
+
+			/*MENU*/
+			nav ul 		{list-style-type: none; /*GETS RID OF BULLET POINTS*/
+						margin: 0;	/*FORCES MENU INTO TOP LEFT OF WINDOW*/
+						padding: 0;} /*FORCES MENU INTO TOP LEFT OF WINDOW*/
+
+			/*MENU OPTIONS*/
+			nav li 		{display:block;
+						text-align: center;
+						padding: 20px;} /*SPACES OUT THE MENU OPTIONS TO MAKE IT LOOK NICE*/
+
+			/*ADDS YELLOW LINE TO ALL BUT LAST OPTION*/
+			nav li:not(:last-child) 	{border-bottom: 3px solid #E4FDB7;}
+
+
+			/*CLASS FOR MENU OPTION THAT HAS A SUBMENU*/
+			.dropdown	{position: relative;
+						display:block;}
+
+			/*ACTUAL SUBMENU*/
+			.dropdown-content	{display:none;
+								left:75%;
+								position: absolute;
+								background-color: #4BA3A5;}
+
+			/*SUBMENU LINKS*/
+			.dropdown-content a 	{display:inline-block;}
+
+			/*WHEN HOVERING OVER A MENU OPTION THAT HAS A SUBMENU*/
+			.dropdown:hover .dropdown-content	{display: block;}
+
+			/*WHEN HOVERING OVER MENU OPTION*/
+			nav li:hover	{background-color:#8BA0B3;}
+
+
+			/*MAKES LINKS LOOK LIKE NORMAL TEXT INSTEAD OF BLUE AND UNDERLINED*/
+			nav a		{text-decoration: none;
+						color: black;
+						display: block;}
+
+			/*USE TO SHOW USER WHICH PAGE THEY ARE CURRENTLY ON BY CHANGING COLOR OF MENU OPTION*/
+			li.active 	{background-color: #2D5174;}
+			
+						
+					
+			/*MEMBERS LIST*/
+						
+			*, *:before, *:after	{box-sizing: inherit;}
+			
+			.column		{box-sizing: border-box;
+						float: left;
+						width: 33.3%;
+						margin-bottom: 16px;
+						padding: 0 8px;}
+						
+			.card		{box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+						}
+						
+			.about-section	{padding: 50px;
+							text-align: center;
+							background-color: #474e5d;
+							color:white;}
+			
+			.container		{padding: 0 16px;}
+			
+			.container::after, .row::after	{content: "";
+											clear: both;
+											display: table;}
+			
+			.title 		{font-weight: bold;}
+			
+			.button		{border: none;
+						outline: 0;
+						display: inline-block;
+						padding: 8px;
+						color: white;
+						background-color: #000;
+						text-align: center;
+						cursor: pointer;
+						width: 100%;}
+			
+			.button:hover	{background-color: #555;}
+			
+			
+			img.logo	{height: 35px;
+							width: 35px;}
+						
+			img.headshots 	{width: 100%;}
+			
+			
+			@media screen and (max-width: 650px)
+			{
+				.column		{width: 100%;
+							display: block;}
+			}
+					
+			
+			/*SPOTLIGHT MEMBER*/
+			img.spotlight	{margin-left:auto;
+							margin-right:auto;
+							display:block;
+		
+			</style>
+	</head>
+
+	<body>
+		<!--SIDEBAR MENU-->
+		<nav>
+			<ul>
+				<li><a href = "home.html"><img src = "https://media.discordapp.net/attachments/816735678476976128/834244098613182464/placeholderlogo.png" width= "100px"></a></li>
+				<li><a href = "aboutus.html">About Us</a></li>
+				<li><div class = "dropdown"><a href = "#events">Events +</a>
+					<ul><div class = "dropdown-content">
+						<li><a href = "eventsarchive.html">Archive</a></li>
+						<li><a href = "eventsupcoming.html">Upcoming</a></li>
+					</div></ul>
+				</div></li>
+				<li class = "active"><a href = "members.html">Members</a></li>
+				<li><a href = "importantlinks.html">Important Links</a></li>
+				<li><a href = "joinus.html">Join Us</a></li>
+			</ul>
+		</nav>
+		
+		<!--PAGE BODY CONTENT MUST GO WITHIN DIV MAIN-->
+
+		<div class = "main">
+			
+			<h1>Members of AV090</h1>
+			<h2>Quarterly Member Spotlight</h2>
+			<p>Each quarter, we like to spotlight a member of our committee that deserves some special recognition</p>
+			
+			<h2>Meet the Committee</h2>
+			<p>Meet the amazing people that make up the AV090 committee!</p>
+			
+			
+		
+			<div class = "row">
+			
+				<div class = "column">
+					<div class = "card">
+						
+						<img class = "headshots" src = "headshots/headshot1.jpg" alt = "Rachel">
+						<div class = "container">
+							<h2>Barta Elias</h2>
+							<p class = "title">Chair</p>
+							<p>Congressional Research Service</p>
+							<p>Specialist in Aviation Policy</p>
+							<p>belias@crs.loc.gov</p>
+							<p><a href = "https://linkedin.com"><button>LinkedIn</button></a></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class = "column">
+					<div class = "card">
+						<img src = "headshots/headshot2.jpg" alt = "Person2" style = "width:100%">
+						<div class = "container">
+							<h2>Christine Gerencher</h2>
+							<p class = "title">Senior Program Officer</p>
+							<p>Transportation Research Board</p>
+							<p>Senior Program Officer - Aviation & Environment</p>
+							<p>cgerencher@nas.edu</p>
+							<p><button class = "button">LinkedIn</button</p>
+						</div>
+					</div>
+				</div>
+			
+				<div class = "column">
+					<div class = "card">
+						<img src = "headshots/headshot6.jpeg" alt = "Person3" style = "width:100%">
+						<div class = "container">
+							<h2>Willie Brown</h2>
+							<p class = "title">Committee Communications Coordinator</p>
+							<p>University of Maryland Eastern Shore</p>
+							<p>Assistant Professor</p>
+							<p>wlbrown@umes.edu</p>
+							<p><button class = "button">LinkedIn</button</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class = "column">
+					<div class = "card">
+						<img src = "headshots/headshot6.jpeg" alt = "Person3" style = "width:100%">
+						<div class = "container">
+							<h2>Christian Salmon</h2>
+							<p class = "title">Committee Research Coordinator</p>
+							<p>Western New England University</p>
+							<p>Assistant Professor</p>
+							<p>christian.salmon@wne.edu</p>
+							<p><button class = "button">LinkedIn</button</p>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			
+		</div>
+		
+		<footer>
+				<p class = "footnote">Disclaimer: Any opinions, findings, or conclusions expressed on this website are those of the authors and do not necessarily reflect the views of the Transportation Research Board or The National Academies.</p>
+	</body>
+</html>
